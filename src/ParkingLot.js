@@ -1,3 +1,5 @@
+const {calculateParkingCharge} = require("./util/helperFunctions");
+
 let slotToBeCreated = [];
 let numberOfSlots = 0;
 let parkedCars = [];
