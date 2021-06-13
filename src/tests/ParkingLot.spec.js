@@ -43,3 +43,16 @@ describe('Parking Lot Status of Parking',  () => {
     });
 });
 
+describe('Parking Lot Release a Car',  () => {
+    it('should return the correct billing amount for given hours',  () => {
+        const expectedResult = 'Registration number UP32BM3695 with Slot Number 1 is free with Charge 50';
+        const actualResult =  parkingLot.releaseACar('UP32BM3695', '6');
+        expect(actualResult).toBe(expectedResult);
+    });
+    it('should give registration number not found if car is not in the parking lot',  () => {
+        const expectedResult = 'Registration number UP32BM3699 not found';
+        const actualResult =  parkingLot.releaseACar('UP32BM3699', '6');
+        expect(actualResult).toBe(expectedResult);
+    });
+});
+
