@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+.DS_Store
+.rspec_status
+
+@saurabh7593
+saurabh7593
+/
+ParkingLotProblem
+Private
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+ParkingLotProblem/.gitignore
+@saurabh7593
+saurabh7593 Initial commit
+Latest commit a7b5770 3 minutes ago
+ History
+ 1 contributor
+104 lines (76 sloc)  1.57 KB
+
 # Logs
 logs
 *.log
@@ -21,6 +54,11 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+
+.idea/
+*.xml
+
+*.iml
 
 # nyc test coverage
 .nyc_output
@@ -102,3 +140,16 @@ dist
 
 # TernJS port file
 .tern-port
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
