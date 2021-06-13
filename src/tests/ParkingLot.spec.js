@@ -35,3 +35,11 @@ describe('Parking Lot Park A Car',  () => {
     });
 });
 
+describe('Parking Lot Status of Parking',  () => {
+    it('should return the correct status of parking lot',  () => {
+        const expectedResult = 'SlotNo.RegistrationNo.' + '1UP32BM3695' + '2UP32BM3696'.replace(/\s/g, '');
+        const actualResult = ( parkingLot.statusOfParkingLot()).replace(/\s/g, '');
+        expect(actualResult).toBe(expectedResult);
+    });
+});
+
