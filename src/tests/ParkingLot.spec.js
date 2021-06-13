@@ -15,3 +15,23 @@ describe ('Parking Lot' , () => {
     });
 });
 
+describe('Parking Lot Park A Car',  () => {
+    it('should park a car with given registration number and color',  () => {
+        const expectedResult = 'Allocated slot number: 1';
+        const actualResult =  parkingLot.parkThisCar('UP32BM3695', 'White');
+        expect(actualResult).toBe(expectedResult);
+    });
+
+    it('should allocate a car correct slot',  () => {
+        const expectedResult = 'Allocated slot number: 2';
+        const actualResult =  parkingLot.parkThisCar('UP32BM3696', 'Black');
+        expect(actualResult).toBe(expectedResult);
+    });
+
+    it('should return parking slot is full if parking slot geets full',  () => {
+        const expectedResult = 'Sorry, parking lot is full';
+        const actualResult =  parkingLot.parkThisCar('UP32BM3697', 'Black');
+        expect(actualResult).toBe(expectedResult);
+    });
+});
+

@@ -1,5 +1,6 @@
 let slotToBeCreated = [];
 let numberOfSlots = 0;
+let parkedCars = [];
 
 const createParkingLot =  (slots) => {
     try {
@@ -13,6 +14,22 @@ const createParkingLot =  (slots) => {
     }
 };
 
+const parkThisCar = (registrationNumber, color) => {
+    if (numberOfSlots !== parkedCars.length) {
+        const slotNumber = slotToBeCreated[0];
+        parkedCars.push({
+            'slotNumber': slotNumber,
+            'color': color,
+            'registrationNumber': registrationNumber,
+        });
+        slotToBeCreated.shift();
+        return `Allocated slot number: ${slotNumber}`
+    } else {
+        return `Sorry, parking lot is full`;
+    }
+};
+
 module.exports = {
-    createParkingLot
+    createParkingLot,
+    parkThisCar
 };
